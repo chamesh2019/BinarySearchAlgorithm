@@ -35,21 +35,7 @@ if __name__ == '__main__':
     index = binarySearch(generated_array, search)
     time_used = time() - start_time
     if not index == -1:
-        print(f'Item {search} was found at  index {index} with a confirmation value of {generated_array[index]} in {time_used} seconds')
-    else:
-        print(f'Item {search} was not found on array in {time_used} seconds')
-    
-    index = 0
-    start_time = time()
-    
-    try:
-        index = generated_array.index(search)
-    except ValueError:
-        index = -1
-        
-    time_used = time() - start_time
-    if not index == -1:
-        print(f'Item {search} was found at  index {index} with a confirmation value of {generated_array[index]} in {time_used} seconds')
+        print(f'Item {search} was found at index {index} with a confirmation value of {generated_array[index]} in {time_used} seconds')
     else:
         print(f'Item {search} was not found on array in {time_used} seconds')
         
